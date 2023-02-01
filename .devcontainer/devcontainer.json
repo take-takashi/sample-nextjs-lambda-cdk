@@ -1,0 +1,33 @@
+{
+  "image": "node:17.6.0",
+  "name": "node:17.6.0",
+  "extensions": [
+    "hediet.vscode-drawio",
+    "GrapeCity.gc-excelviewer",
+    "mechatroner.rainbow-csv",
+    "redhat.vscode-yaml",
+    "esbenp.prettier-vscode",
+    "donjayamanne.githistory",
+    "KnisterPeter.vscode-commitizen",
+    "oderwat.indent-rainbow",
+    "2gua.rainbow-brackets",
+    "MS-CEINTL.vscode-language-pack-ja",
+    "PKief.material-icon-theme",
+    "dbaeumer.vscode-eslint"
+  ],
+  "settings": {
+    "editor.tabSize": 2, // インデントタブサイズは2とする
+    "editor.insertSpaces": true, // インデントはスペースとする
+    "editor.defaultFormatter": "esbenp.prettier-vscode", // デフォルトフォーマッターをPrettierにする
+    "editor.formatOnSave": true, // 保存時にフォーマットする
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true // ファイル保存時、ESLint による自動フォーマット
+    }
+  },
+  "postCreateCommand": "bash ./.devcontainer/init.bash", // devcontainer作成時に実行されるコマンド
+  // "postAttachCommand": "echo", // codespaces接続時に実行されるコマンド
+  "features": {
+    "ghcr.io/devcontainers/features/aws-cli:1": {},
+    "ghcr.io/devcontainers-contrib/features/aws-cdk:2": {}
+  }
+}
