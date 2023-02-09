@@ -13,8 +13,13 @@ export class DbStack extends cdk.Stack {
     });
 
     // create private subnets
-    const selection = vpc.selectSubnets({
+    const privateSubnets = vpc.selectSubnets({
       subnetType: ec2.SubnetType.PRIVATE_ISOLATED,
+    });
+
+    // create public subnets
+    const publicSubnets = vpc.selectSubnets({
+      subnetType: ec2.SubnetType.PUBLIC,
     });
 
     // TODO output vpc
