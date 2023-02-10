@@ -1,26 +1,31 @@
 {
-  "image": "node:17.6.0",
-  "name": "node:17.6.0",
-  "extensions": [
-    "hediet.vscode-drawio",
-    "GrapeCity.gc-excelviewer",
-    "mechatroner.rainbow-csv",
-    "redhat.vscode-yaml",
-    "esbenp.prettier-vscode",
-    "donjayamanne.githistory",
-    "KnisterPeter.vscode-commitizen",
-    "oderwat.indent-rainbow",
-    "MS-CEINTL.vscode-language-pack-ja",
-    "PKief.material-icon-theme",
-    "dbaeumer.vscode-eslint"
-  ],
-  "settings": {
-    "editor.tabSize": 2, // インデントタブサイズは2とする
-    "editor.insertSpaces": true, // インデントはスペースとする
-    "editor.defaultFormatter": "esbenp.prettier-vscode", // デフォルトフォーマッターをPrettierにする
-    "editor.formatOnSave": true, // 保存時にフォーマットする
-    "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": true // ファイル保存時、ESLint による自動フォーマット
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:16",
+  "customizations": {
+    // Configure properties specific to VS Code.
+    "vscode": {
+      // Add the IDs of extensions you want installed when the container is created.
+      "extensions": [
+        "hediet.vscode-drawio",
+        "GrapeCity.gc-excelviewer",
+        "mechatroner.rainbow-csv",
+        "redhat.vscode-yaml",
+        "esbenp.prettier-vscode",
+        "donjayamanne.githistory",
+        "KnisterPeter.vscode-commitizen",
+        "oderwat.indent-rainbow",
+        "MS-CEINTL.vscode-language-pack-ja",
+        "PKief.material-icon-theme",
+        "dbaeumer.vscode-eslint"
+      ],
+      "settings": {
+        "editor.tabSize": 2, // インデントタブサイズは2とする
+        "editor.insertSpaces": true, // インデントはスペースとする
+        "editor.defaultFormatter": "esbenp.prettier-vscode", // デフォルトフォーマッターをPrettierにする
+        "editor.formatOnSave": true, // 保存時にフォーマットする
+        "editor.codeActionsOnSave": {
+          "source.fixAll.eslint": true // ファイル保存時、ESLint による自動フォーマット
+        }
+      }
     }
   },
   "postCreateCommand": "bash ./.devcontainer/init.bash", // devcontainer作成時に実行されるコマンド
