@@ -5,18 +5,20 @@
     "vscode": {
       // Add the IDs of extensions you want installed when the container is created.
       "extensions": [
-        "hediet.vscode-drawio",
-        "GrapeCity.gc-excelviewer",
-        "mechatroner.rainbow-csv",
-        "redhat.vscode-yaml",
-        "esbenp.prettier-vscode",
-        "donjayamanne.githistory",
-        "KnisterPeter.vscode-commitizen",
-        "oderwat.indent-rainbow",
-        "MS-CEINTL.vscode-language-pack-ja",
-        "PKief.material-icon-theme",
-        "dbaeumer.vscode-eslint"
-      ],
+		"hediet.vscode-drawio",
+		"GrapeCity.gc-excelviewer",
+		"mechatroner.rainbow-csv",
+		"redhat.vscode-yaml",
+		"esbenp.prettier-vscode",
+		"donjayamanne.githistory",
+		"KnisterPeter.vscode-commitizen",
+		"oderwat.indent-rainbow",
+		"MS-CEINTL.vscode-language-pack-ja",
+		"PKief.material-icon-theme",
+		"dbaeumer.vscode-eslint",
+		"bierner.markdown-mermaid",
+		"Gruntfuggly.todo-tree"
+	],
       "settings": {
         "editor.tabSize": 2, // インデントタブサイズは2とする
         "editor.insertSpaces": true, // インデントはスペースとする
