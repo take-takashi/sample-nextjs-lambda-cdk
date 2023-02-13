@@ -13,6 +13,7 @@ COPY --from=public.ecr.aws/awsguru/aws-lambda-adapter:0.5.0 /lambda-adapter /opt
 ENV PORT=3000
 
 COPY --from=builder /build/next.config.js ./
+COPY --from=builder /build/.env.local ./
 COPY --from=builder /build/public ./public
 COPY --from=builder /build/.next/static ./.next/static
 COPY --from=builder /build/.next/standalone ./
