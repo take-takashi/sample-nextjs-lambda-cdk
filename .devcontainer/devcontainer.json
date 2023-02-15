@@ -29,8 +29,10 @@
       }
     }
   },
-  "postCreateCommand": "bash ./.devcontainer/init.bash", // devcontainer作成時に実行されるコマンド
-  // "postAttachCommand": "echo", // codespaces接続時に実行されるコマンド
+  // devcontainer作成時に実行されるコマンド
+  "postCreateCommand": "./.devcontainer/postCreateCommand.sh",
+  // devcontainer接続時に実行されるコマンド
+  // "postAttachCommand": ""
   "features": {
     "ghcr.io/devcontainers/features/aws-cli:1": {},
     "ghcr.io/devcontainers-contrib/features/aws-cdk:2": {},
