@@ -30,7 +30,7 @@
     }
   },
   // devcontainer作成時に実行されるコマンド
-  "postCreateCommand": "./.devcontainer/postCreateCommand.sh",
+  "postCreateCommand": "bash ./.devcontainer/init.bash",
   // devcontainer接続時に実行されるコマンド
   // "postAttachCommand": ""
   "features": {
